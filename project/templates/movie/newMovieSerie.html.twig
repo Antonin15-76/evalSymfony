@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+{# <form>
+  <fieldset>
+    <legend>Legend</legend>
+    <div class="form-group">
+      <label for="nom" class="form-label mt-4">Nom</label>
+      <input type="text" class="form-control" id="nom" placeholder="Entrer Nom">
+    </div>
+    {# <div class="form-group">
+      <label for="date_creation" class="form-label mt-4">Date</label>
+      <input type="date" class="form-control" id="date_creation" placeholder="Date création">
+    </div> #}
+    {# <div class="form-group">
+      <label for="exampleSelect1" class="form-label mt-4">Example select</label>
+      <select class="form-select" id="exampleSelect1">
+        <option>movie</option>
+        <option>serie</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleTextarea" class="form-label mt-4">Example textarea</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form> #}
+
+{{ form_start(form) }}
+
+        {{ form_widget(form) }}
+
+        <button type="submit" class="btn btn-primary">Créer</button>
+
+        {{ form_end(form)}}
+
+{% endblock %}
